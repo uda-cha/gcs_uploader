@@ -1,0 +1,3 @@
+credentials  = "./.credentials/account.json"
+project      = "your_gcp_project_id"
+region       = "your_gcs_region"
