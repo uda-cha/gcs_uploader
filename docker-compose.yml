@@ -10,6 +10,10 @@ services:
   gcloud:
     image: google/cloud-sdk:292.0.0
     container_name: gcloud
+    environment:
+      SRC_PATH: ${SRC_PATH}
+      BUCKET_NAME: ${BUCKET_NAME}
+      TZ: "Asia/Tokyo"
     volumes:
       - ./:/workdir
       - ./.credentials/account.json:/workdir/.credentials/account.json
