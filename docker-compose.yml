@@ -7,4 +7,10 @@ services:
       - ./:/workdir
       - ./.credentials/account.json:/workdir/.credentials/account.json
     working_dir: "/workdir"
-
+  gcloud:
+    image: google/cloud-sdk:292.0.0
+    container_name: gcloud
+    volumes:
+      - ./:/workdir
+      - ./.credentials/account.json:/workdir/.credentials/account.json
+    working_dir: "/workdir"
